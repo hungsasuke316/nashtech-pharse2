@@ -1,0 +1,47 @@
+@use "../../scss/" as *;
+
+.sidebar {
+  margin-right: 4rem;
+}
+
+.logo {
+  color: $header-bg;
+  &__image {
+    width: 150px;
+  }
+  &__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 18px;
+  }
+}
+
+.menu {
+  background-color: $menu-bg;
+  width: 300px;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  &-navlink {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    color: black;
+  }
+  &__item {
+    &:hover {
+      background-color: $menu-hover-bg;
+    }
+  }
+  &__item--active {
+    background-color: $menu-active-bg;
+    color: white;
+  }
+}
+
+a.menu-navlink:hover {
+  color: red !important;
+  background-color: $menu-hover-bg;
+}

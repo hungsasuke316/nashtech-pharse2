@@ -1,0 +1,22 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 9px;
+  margin-right: 0.5rem;
+  height: 38px;
+  div > input {
+    border: none;
+  }
+  div > input:focus {
+    outline: 0;
+  }
+
+  div + div {
+    border-left: 1px solid black;
+  }
+  div > button {
+    padding: 0 0.5rem;
+  }
+}

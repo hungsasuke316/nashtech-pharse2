@@ -1,0 +1,192 @@
+// @use "../../scss/" as *;
+
+// @media only screen and (max-width: 768px) {
+//   label {
+//     font-size: 0.9em;
+//   }
+// }
+
+// .header {
+//   background-color: $header-bg;
+//   height: 70px;
+//   color: white;
+//   font-weight: bold;
+//   font-size: 1.5em;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 25px;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 1;
+
+
+//   button {
+//     background-color: #cf2338;
+//     color: white;
+//     border-style: none;
+//     border-radius: 8px;  
+//   }
+//   button span{
+//     font-size: 25px;
+//     font-weight: bold;
+//   }
+
+//   button:hover {
+//     background-color: #d43548;
+//   }
+
+//   button:not(:disabled):not(:disabled):active {
+//     background-color: #cf2338;
+//   }
+
+//   #user_header {
+//     padding-right: 25px;
+//   }
+
+//   .dropdown-item {
+//     color: #20191a;
+//   }
+
+//   .dropdown-item:hover {
+//     background-color: #d84b5c;
+//     color: aliceblue;
+//   }
+
+//   .dropdown-menu {
+//     border: 1px solid #20191a;
+//   }
+
+//   #ModalLabel {
+//     color: #d43548;
+//     text-align: center;
+//   }
+
+//   .modal-header {
+//     background-color: rgb(240, 245, 245);
+//   }
+
+//   #btnCancel {
+//     background-color: whitesmoke;
+//     color: #20191a;
+//     border: 0.5px solid #20191a;
+//   }
+
+//   #btnLogout {
+//     border: 1px solid white;
+//   }
+
+//   .new-password {
+//     color: #20191a;
+//     font-size: 17px;
+//     position: relative;
+//   }
+
+//   .old-password {
+//     color: #20191a;
+//     font-size: 17px;
+//     position: relative;
+//   }
+
+//   .icon-eye {
+//     position: absolute;
+//     right: 5px;
+//   }
+
+// }
+
+@use "../../scss/" as *;
+
+@media only screen and (max-width: 768px) {
+  label {
+    font-size: 0.9em;
+  }
+}
+
+.header {
+  background-color: $header-bg;
+  height: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+
+
+  button {
+    background-color: #cf2338;
+    color: white;
+    border-style: none;
+    border-radius: 8px;  
+  }
+  button span{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: #d43548;
+  }
+
+  button:not(:disabled):not(:disabled):active {
+    background-color: #cf2338;
+  }
+
+  #user_header {
+    padding-right: 25px;
+  }
+
+  .dropdown-item {
+    color: #20191a;
+  }
+
+  .dropdown-item:hover {
+    background-color: #d84b5c;
+    color: aliceblue;
+  }
+
+  .dropdown-menu {
+    border: 1px solid #20191a;
+  }
+
+  #ModalLabel {
+    color: #d43548;
+    text-align: center;
+  }
+
+  .modal-header {
+    background-color: rgb(240, 245, 245);
+  }
+
+  #btnCancel {
+    background-color: whitesmoke;
+    color: #20191a;
+    border: 0.5px solid #20191a;
+  }
+
+  #btnLogout {
+    border: 1px solid white;
+  }
+
+  .new-password {
+    color: #20191a;
+    font-size: 17px;
+    position: relative;
+  }
+
+  .old-password {
+    color: #20191a;
+    font-size: 17px;
+    position: relative;
+  }
+
+  .icon-eye {
+    position: absolute;
+    right: 5px;
+  }
+
+}

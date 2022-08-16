@@ -1,0 +1,18 @@
+.spinnerStyles {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #fff;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-radius: 100rem;
+  display: inline-block;
+    animation: spinner 1s linear infinite;
+    @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

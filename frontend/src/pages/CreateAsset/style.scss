@@ -1,0 +1,100 @@
+@use "../../scss/" as *;
+
+.form-create-asset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(0, -50%);
+  }
+  &__title {
+    color: $header-bg;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  &__input-wrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-top: 30px;
+    width: 50rem;
+  }
+  &__input {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: #ccc 1px solid;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  textarea {
+    resize: none;
+    height: 6rem;
+    padding: 0.5rem 20px;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 30px;
+  }
+  &__button-item {
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}
+
+#save {
+  background-color: $header-bg;
+  color: white;
+}
+
+#cancel {
+  background-color: white;
+  color: #555;
+  border: #555 1px solid;
+}
+.form-check-input:checked {
+  background-color: red !important;
+  border-color: red !important;
+}
+
+#add-new-category {
+  color: red;
+  text-decoration: underline;
+  font-style: italic;
+  cursor: pointer;
+}
+button#dropdownMenuLink.btn.border.dropdown-toggle {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  height: 37px;
+}
+button#dropdownMenuLink.btn.border.dropdown-toggle::after {
+  margin-left: auto !important;
+}
+
+#drop-list-cate {
+  max-height: 15rem;
+  overflow-y: scroll;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}

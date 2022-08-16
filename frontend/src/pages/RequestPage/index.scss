@@ -1,0 +1,94 @@
+@use "../../scss/" as *;
+
+.request-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.5rem;
+  margin-right: 5rem;
+  
+  width: 100%;
+  align-items: flex-start;
+  .title {
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .board-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .filterByState {
+        display: flex;
+        .dropdown-toggle::after {
+          display: none;
+        }
+        ul {
+          align-items: flex-start;
+          padding: 0 2rem;
+        }
+      }
+
+      .filterByDate {
+        border: 1px solid black;
+        border-radius: 9px;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        margin-left: 1rem;
+
+        input {
+          border: none;
+          margin: 0rem 1rem;
+        }
+        input:focus {
+          outline: 0;
+        }
+
+        .iconDate {
+          padding: 0.4rem;
+        }
+      }
+    }
+    .board-right {
+      .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 9px;
+        margin-right: 0.5rem;
+        div > input {
+          border: none;
+        }
+        div > input:focus {
+          outline: 0;
+        }
+
+        div + div {
+          border-left: 1px solid black;
+        }
+        div > button {
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+  .paging {
+    width: 100%;
+    text-align: end;
+    margin: 2rem 2rem 2rem 0;
+  }
+}
+
+table.returningList {
+  border-collapse: separate !important;
+  border-spacing: 1rem 0;
+}

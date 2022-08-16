@@ -1,0 +1,16 @@
+
+#disabled {
+  background-color: #ccc;
+  border: 1px solid #555;
+  opacity: 0.5;
+  pointer-events: none;
+}
+button#disabled.btn.dropdown-toggle {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  height: 37px;
+}
+button#disabled.btn.dropdown-toggle::after {
+  margin-left: auto !important;
+}

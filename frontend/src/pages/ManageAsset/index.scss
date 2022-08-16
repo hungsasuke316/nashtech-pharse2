@@ -1,0 +1,121 @@
+// @use "../../scss/index" as *;
+
+// .user-list {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   margin-top: 5rem;
+//   margin-right: 5rem;
+//   .title {
+//     color: $header-bg;
+//     font-size: larger;
+//     font-weight: 700;
+//     margin-bottom: 2rem;
+//   }
+
+//   .table-board {
+//     margin-right: 4rem;
+//     margin-bottom: 1rem;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     .left-board {
+//       .filter {
+//         display: flex;
+//         gap: 1rem;
+//         button {
+//           width: 14rem;
+//           display: flex;
+//           justify-content: space-between;
+//         }
+//         .dropdown-toggle::after {
+//           display: none;
+//         }
+//       }
+//       ul {
+//         align-items: flex-start;
+//         padding: 0 2rem;
+//         cursor: pointer;
+//       }
+//     }
+
+//     .right-board {
+//       display: flex;
+//       .search {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         border: 1px solid black;
+//         border-radius: 9px;
+//         margin-right: 0.5rem;
+//         div > input {
+//           border: none;
+//         }
+//         div > input:focus {
+//           outline: 0;
+//         }
+
+//         div + div {
+//           border-left: 1px solid black;
+//         }
+//         div > button {
+//           padding: 0 0.5rem;
+//         }
+//       }
+//     }
+//   }
+
+//   .table-user-list {
+//     table,
+//     thead,
+//     tbody {
+//       width: 100%;
+//     }
+//     td,
+//     th {
+//       text-align: left;
+//       padding: 0 5px !important;
+//     }
+
+//     tbody > tr:hover {
+//       background-color: #fde6e6;
+//     }
+//   }
+
+//   .paging {
+//     margin: 1rem 1.5rem;
+//     button {
+//       border-radius: 0;
+//     }
+//   }
+// }
+
+// .modal {
+//   border: 1px solid black;
+//   .modal-header {
+//     border-bottom: 1px solid black;
+//     font-weight: 700;
+//   }
+//   .modal-body {
+//     .detail {
+//       padding: 1rem;
+//       .detail-item {
+//         display: flex;
+//         width: 100%;
+//         text-align: left;
+//         padding: 0.5rem;
+//         .label {
+//           width: 30%;
+//         }
+//         .value {
+//           width: 70%;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// a.link-to-create {
+//   text-decoration: none !important;
+//   color: white !important;
+// }
